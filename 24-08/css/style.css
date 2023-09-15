@@ -1,0 +1,410 @@
+:root{
+    --negro: #000;
+    --blanco: #fff;
+    --aqua: #00FFFF; 
+    --celeste: #00c3ff;
+    --azul: #191c32;
+    --gris: #24262b;
+    --gris2:#BBBBBB;
+    --aliceblue:#F0F8FF;
+}
+
+
+html {
+    font-size: 62.5%; /* =10px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width:100%;
+    height: 100vh;
+    background-color:var(--azul);
+    color:var(--blanco)
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 1.8rem;
+    width:100%;
+    
+}
+.iniciales{
+    transition: 300ms;
+    
+}
+.iniciales:hover{
+    transform: rotate(-15deg);
+}
+.brand{
+    margin-top: -0.7rem;
+}
+.brand span{
+    color: var(--aqua);
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: var(--aqua);
+    text-decoration: none;
+    padding:1rem 2rem ;
+    border-radius: 2.5rem;
+}
+.menu a:hover{
+    background-color: var(--aqua);
+    color:var(--azul);
+    transition: ease-in .3s;
+}
+.contprincipal{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 9.5rem;
+    transition: 300ms;
+    
+}
+h1:hover{
+    transform: translateY(-10px);
+}
+p{
+    font-size: 2.5rem;
+   
+    
+}
+span{
+    color:var(--aqua);
+}
+.dad{
+    margin-top: 4rem;
+}
+.boton{
+    padding: 1rem 2rem;
+    background-color: var(--aqua);
+    border: none;
+    border-radius: 3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    transition:all 300ms;
+    color: var(--negro);
+}
+.boton:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.contprincipal img{
+    width: 50rem;
+    border-radius: 75rem;
+    margin-left: 25rem;
+    transition: all 200ms;
+}
+.contprincipal img:hover{
+    transform: scale(1.1);
+
+}
+.sobremi{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(to bottom, var(--azul) , var(--negro));
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.sobremi-info{
+    color: var(--blanco);
+    margin-right: 6rem;
+}
+.sobremi img{
+    margin-left: 5rem;
+    transition: 300ms;
+}
+.sobremi img:hover{
+    transform: rotate(-12deg);
+}   
+.curri{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(to bottom,var(--negro) ,var(--azul) );
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.curri-info{
+    color:var(--blanco);
+    margin-right: 6rem;
+}
+.curri img{
+    margin-left: 5rem;
+    transition: 300ms;
+}
+.curri img:hover{
+    transform: rotate(-12deg);
+}   
+
+
+
+.footer{
+    background-color: var(--gris);
+    padding: 80px 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4 {
+    font-size: 20px;
+    color: var(--blanco);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--celeste);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    
+    text-decoration: none;
+    color: var(--gris2);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+   
+} 
+.footer-links ul li a:hover{
+    color: var(--blanco);
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 30px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.214);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--blanco);
+    transition: all .5s ease;
+    
+}
+.social-link a:hover{
+    background-color: var(--celeste);
+}
+.social-link a i{
+    font-size: 1.8rem;
+}
+
+.qr{
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.rbl{
+   
+    margin-top: 15rem;
+    margin-left: 0;
+}
+
+.sofofa{
+    width: 25rem;
+    height: auto;
+    margin-top: 15rem;
+    margin-left: 20rem;
+}
+
+#sobremii:target,#contacto:target, #Curriculum:target {
+    border: 2px solid var(--negro);
+}
+
+.boton:focus{
+    background-color: var(--aliceblue);
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        width: 70%;
+    }
+
+    .contprincipal,
+    .sobremi,
+    .curri {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media screen and (min-width: 768px) {
+        /* Mantén los estilos de las imágenes para pantallas medianas y grandes */
+        .contprincipal img,
+        .sobremi img,
+        .curri img {
+            width: 80%;
+            max-width: 100%;
+            max-height: auto; /* Mantén esta línea también para las pantallas medianas y grandes */
+        }
+    }
+
+    /* Achicar las imágenes en pantallas medianas y grandes */
+    .contprincipal img,
+    .sobremi img,
+    .curri img {
+        width: 80%;
+        max-width: 100%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .menu {
+        width: 100%;
+    }
+
+    .contprincipal,
+    .sobremi,
+    .curri {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contprincipal img,
+    .sobremi img,
+    .curri img {
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none; /* Hide the menu on small screens */
+    }
+
+    .contprincipal,
+    .sobremi,
+    .curri {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contprincipal img,
+    .sobremi img,
+    .curri img {
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        padding: 1em;
+    }
+
+    .iniciales {
+        font-size: 3rem;
+    }
+
+    .contprincipal {
+        height: auto;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .sobremi,
+    .curri {
+        height: auto;
+    }
+
+    .sobremi img,
+    .curri img {
+        margin-left: 0;
+        width: 60%;
+        max-width: 100%;
+    }
+
+    .sobremi-info,
+    .curri-info {
+        margin-right: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* Centra las imágenes en dispositivos móviles */
+    .contprincipal img,
+    .sobremi img,
+    .curri img {
+        display: block; /* Hace que la imagen sea un elemento en bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+}
+/* Añade un estilo específico para dispositivos pequeños (pantallas con un ancho máximo de 767px) */
+@media screen and (max-width: 767px) {
+    /* Achica las imágenes .rbl y .sofofa en dispositivos móviles */
+    .rbl,
+    .sofofa {
+        max-width: 80%; /* Cambia el ancho máximo de las imágenes */
+        height: auto; /* Ajusta automáticamente la altura */
+    }
+}
+@media screen and (max-width: 767px) {
+    /* Achica las imágenes .sofofa en dispositivos móviles */
+    img.sofofa {
+        max-width: 80%; /* Cambia el ancho máximo de las imágenes */
+        height: auto; /* Ajusta automáticamente la altura */
+    }
+}
+/* Añade un estilo para achicar todas las imágenes en dispositivos pequeños (pantallas con un ancho máximo de 767px) */
+@media screen and (max-width: 767px) {
+    /* Achica todas las imágenes en dispositivos móviles */
+    img {
+        max-width: 70%; /* Cambia el ancho máximo de todas las imágenes */
+        height: auto; /* Ajusta automáticamente la altura */
+    }
+}
